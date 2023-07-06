@@ -24,9 +24,15 @@ body {
 }
 
 .logo {
+    cursor: pointer;
     z-index: 3333;
     margin-top: 32px;
     margin-left: 46px;
+}
+
+.spotlight-small-title {
+    max-width: 500px;
+    margin-bottom: 20px;
 }
 
 .log-in-screen {
@@ -55,68 +61,6 @@ body {
     letter-spacing: -1.41px;
 }
 
-.rectacle {
-    display: flex;
-    margin-top: 38.8px;
-}
-
-.google-logo {
-    width: 183.438px;
-    height: 63.37px;
-}
-
-.google-logo {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 13.341px;
-    background: #F5F5F5;
-}
-
-.google {
-    margin: auto;
-    width: 26.763px;
-    flex-direction: column;
-    flex-shrink: 0;
-}
-
-.google {
-    color: #323142;
-    text-align: center;
-    font-size: 31.129px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-    letter-spacing: 2.835px;
-    text-transform: uppercase;
-}
-
-.apple-logo {
-    align-items: center;
-    width: 183.438px;
-    height: 63.37px;
-    flex-shrink: 0;
-}
-
-.apple-logo {
-    display: flex;
-    border-radius: 13.341px;
-    background: #F5F5F5;
-}
-
-.apple-logo {
-    margin-left: 10px;
-}
-
-.apple {
-    margin: auto;
-    width: 25.57px;
-    height: 30.017px;
-    flex-shrink: 0;
-}
-
 .or {
     border-radius: 45px;
     background: #FFF;
@@ -140,15 +84,38 @@ body {
 
 /* email input*/
 
+
 .accounts {
     display: flex;
     flex-direction: column;
 }
 
-input[type=password]::placeholder {
+::-ms-reveal {
+    display: none;
+}
+
+#eye {
+    cursor: pointer;
+}
+
+span {
+    position: absolute;
+    margin-right: 20px;
+}
+
+.input {
+    display: flex;
+    font-size: 35px;
+    color: #6C5FBC;
+    margin-top: 24.46px;
+    width: 382.441px;
+    height: 74.487px;
+}
+
+input[type="password"]::placeholder {
     color: #C2C3CB;
-    font-size: 16.676px;
     font-family: Poppins;
+    font-size: 16.676px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -156,24 +123,20 @@ input[type=password]::placeholder {
     text-transform: uppercase;
 }
 
-input[type=password] {
-    font-size: 35px;
-    color: #6C5FBC;
-    margin-top: 24.46px;
-    width: 382.441px;
-    height: 74.487px;
-    flex-shrink: 0;
+input[type="text"]::placeholder {
+    color: #C2C3CB;
+    font-family: Poppins;
+    font-size: 16.676px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.167px;
+    text-transform: uppercase;
 }
 
-::-ms-reveal {
-    margin-right: 20px;
-    width: 21.994px;
-    height: 19.738px;
-    flex-shrink: 0;
-    background-image: url(Icon-active.png);
-}
-
-input[type=password] {
+.input {
+    align-items: center;
+    justify-content: right;
     border-radius: 14.275px;
     background: #F5F5F5;
     background-image: url(Lock.png);
@@ -181,11 +144,24 @@ input[type=password] {
     background-position: 23.35px 50%;
 }
 
-input[type=password]:focus {
-    text-align: center;
+input[type="password"]:focus {
+    align-items: center;
+    justify-content: right;
     font-size: 35px;
     color: #6C5FBC;
-    background-image: url(Lock_active\ -\ Text.png);
+    background-image: url(Lock_active.png);
+    background-repeat: no-repeat;
+    background-position: 23.35px 50%;
+}
+
+input[type="type"]:focus {
+    align-items: center;
+    justify-content: right;
+    font-size: 35px;
+    color: #6C5FBC;
+    background-image: url(Lock_active.png);
+    background-repeat: no-repeat;
+    background-position: 23.35px 50%;
 }
 
 .btn {
