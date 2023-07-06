@@ -121,6 +121,17 @@ input[type="password"]::placeholder {
     text-transform: uppercase;
 }
 
+input[type="text"]::placeholder {
+    color: #C2C3CB;
+    font-family: Poppins;
+    font-size: 16.676px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.167px;
+    text-transform: uppercase;
+}
+
 input {
     border-radius: 14.275px;
     background: #F5F5F5;
