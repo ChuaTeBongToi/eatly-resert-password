@@ -108,8 +108,6 @@ span {
     font-size: 35px;
     color: #6C5FBC;
     margin-top: 24.46px;
-    width: 382.441px;
-    height: 74.487px;
 }
 
 input[type="password"]::placeholder {
@@ -123,38 +121,26 @@ input[type="password"]::placeholder {
     text-transform: uppercase;
 }
 
-input[type="text"]::placeholder {
-    color: #C2C3CB;
-    font-family: Poppins;
-    font-size: 16.676px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.167px;
-    text-transform: uppercase;
-}
-
-.input {
-    align-items: center;
-    justify-content: right;
+input {
     border-radius: 14.275px;
     background: #F5F5F5;
     background-image: url(Lock.png);
     background-repeat: no-repeat;
     background-position: 23.35px 50%;
+    width: 388px;
+    height: 75.57px;
+    flex-shrink: 0;
 }
 
-input[type="password"]:focus {
+.input {
     align-items: center;
     justify-content: right;
-    font-size: 35px;
-    color: #6C5FBC;
-    background-image: url(Lock_active.png);
-    background-repeat: no-repeat;
-    background-position: 23.35px 50%;
 }
 
-input[type="type"]:focus {
+input:focus {
+    border-radius: 14.482px;
+border: 2.256px solid #6C5FBC;
+background: #F5F5F5;
     align-items: center;
     justify-content: right;
     font-size: 35px;
@@ -256,6 +242,20 @@ input[type="type"]:focus {
 
 .spotlight-title {
     margin-bottom: 20px;
+}
+
+.spotlight-small-title {
+    color: var(--others-white, #FFF);
+    text-align: center;
+
+    /* body/medium/medium */
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    opacity: 0.699999988079071;
 }
 
 .spotlight {
